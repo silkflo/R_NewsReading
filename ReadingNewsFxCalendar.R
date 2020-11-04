@@ -20,6 +20,9 @@ library(magrittr)
 restrictedEvents <- read_csv("E:/trading/Git/R_NewsReading/RestrictedEvents.csv",
                              col_names = F)
 
+calendarEvents <- read_csv("E:/trading/Git/R_NewsReading/calendar-event-list.csv",
+                           col_names = F)
+
 # get url to access the data. URL shall be like this: "http://www.forexfactory.com/calendar.php?day=dec2.2016"
 url <- paste("http://www.forexfactory.com/calendar.php?day=",
              month(Sys.Date(), label = TRUE),
@@ -27,7 +30,7 @@ url <- paste("http://www.forexfactory.com/calendar.php?day=",
              year(Sys.Date()), sep = "")
 
 # TEST URL
-#url <- "http://www.forexfactory.com/calendar.php?day=dec12.2016"
+#url <- "http://www.forexfactory.com/calendar?day=nov2.2020"
 
 # get the raw data from web
 fxcal <- url %>% read_html() 
@@ -37,6 +40,14 @@ currency <- fxcal %>% html_nodes(".currency") %>% html_text()
 
 # get the event info for the day
 event <- fxcal %>% html_nodes(".calendar__event-title") %>% html_text()
+
+# get the event time
+#timeEvent <- data.frame(fxcal %>% html_nodes(".time") %>% html_text())
+#sysTime <- Sys.time()%>% 
+#  timeEvent$X1 <- gsub(":.*$","", timeEvent$X1)
+ 
+
+
 
 # create data frame
 todaysEvents <- data.frame(currency, event, stringsAsFactors = FALSE) #%>% View()
@@ -59,12 +70,15 @@ for (j in 1:nrow(restrictedEvents))
     {
       todaysEvents[i, 3] <- 0
       # when flag is 1 then no trading as macroeconomical event is detected
-      flag <- 1
+     
+      flag <-1
       break
     }
     
   }
 }
+
+#ifelse(flag == 1 & time(sys.Time() > timeEvent + 3) )
 
 # write the results of the all events (for user control purposes)
 write.csv(todaysEvents, paste("E:/trading/Git/R_NewsReading/log/log-", Sys.Date(), ".csv", sep = ""))
@@ -78,7 +92,6 @@ write.csv(flag, "C:/Program Files (x86)/AM MT4 - Terminal 2/MQL4/Files/01_Macroe
 write.csv(flag, "C:/Program Files (x86)/AM MT4 - Terminal 3/MQL4/Files/01_MacroeconomicEvent.csv", row.names = F)
 #Terminal 4
 write.csv(flag, "C:/Program Files (x86)/AM MT4 - Terminal 4/MQL4/Files/01_MacroeconomicEvent.csv", row.names = F)
-
 
 
 
