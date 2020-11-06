@@ -1,38 +1,9 @@
 Id,Start,Name,Impact,Currency
-1dbb8def-514f-4ce2-ba0a-32836ec39ae7,11/05/2020 13:30:00,Continuing Jobless Claims,MEDIUM,USD
-34853eba-7014-4354-a786-421f09a4398c,11/05/2020 13:30:00,Nonfarm Productivity,MEDIUM,USD
-58c72c16-d1ce-4da1-832e-4b3d43fbbe74,11/05/2020 13:30:00,Initial Jobless Claims,MEDIUM,USD
-8fc775f2-4742-443e-aa8c-349647a794b5,11/05/2020 13:30:00,Unit Labor Costs,MEDIUM,USD
-901545b6-bebb-418f-ab0c-09907dc93692,11/05/2020 13:30:00,Initial Jobless Claims 4-week average,MEDIUM,USD
-5bdd2c51-be99-4f8d-bb70-795d2825afe1,11/05/2020 15:00:00,German Buba President Weidmann speech,MEDIUM,EUR
-36402b0c-29cf-42a3-8f91-9b439219c34c,11/05/2020 15:00:00,SNB's Maechler speech,MEDIUM,CHF
-6f94ea11-afe6-463a-bf5c-a2571ed2f414,11/05/2020 15:10:00,ECB's Schnabel speech,MEDIUM,EUR
-e42ad2a8-5c2f-427d-ae33-e781f7a60414,11/05/2020 15:30:00,4-Week Bill Auction,LOW,USD
-bf759118-579e-437f-96d3-b2c1f7605e8c,11/05/2020 15:30:00,EIA Natural Gas Storage Change,LOW,USD
-50ffc838-d034-4aa9-a593-5e67a8ca9d05,11/05/2020 16:00:00,Fed Interest Rate Decision,HIGH,USD
-ad589723-decb-4ab4-9ae7-40a53ef7f33c,11/05/2020 19:00:00,Fed's Monetary Policy Statement,HIGH,USD
-b09b6f3c-b03e-4976-980d-79e8a5d4a405,11/05/2020 19:30:00,FOMC Press Conference,HIGH,USD
-d804569b-e600-493f-a229-380f36bac66c,11/05/2020 21:30:00,AiG Performance of Services Index,LOW,AUD
-22e4c80d-dea3-4931-b58b-cdc8751ddb5c,11/05/2020 23:30:00,Labor Cash Earnings (YoY),LOW,JPY
-938a4e9a-956e-4bed-bdd8-b1f3a84e54cc,11/05/2020 23:30:00,Overall Household Spending (YoY),MEDIUM,JPY
-ed2189fa-5567-48e8-bdbd-211319c58574,11/05/2020 23:50:00,Foreign Investment in Japan Stocks,LOW,JPY
-790adca6-3084-4e03-b36c-e7510c6cfa93,11/05/2020 23:50:00,Foreign Bond Investment,LOW,JPY
-c02db1ba-ec5d-4bf2-82e2-f9e5bde87488,11/06/2020 00:30:00,RBA Monetary Policy Statement,HIGH,AUD
-442bc0b8-5e20-4428-8655-7b82579b1fff,11/06/2020 02:00:00,RBNZ Inflation Expectations (QoQ),MEDIUM,NZD
-c1f1d91d-0155-4ed6-816b-b583c1e85d70,11/06/2020 07:00:00,Industrial Production s.a. (MoM),MEDIUM,EUR
-7b0c3419-56df-476b-9353-8c9b1de277d6,11/06/2020 07:00:00,Industrial Production n.s.a. w.d.a. (YoY),LOW,EUR
-"dd03d00c-b1be-4dad-98ea-961535f8d8d6,11/06/2020 07:45:00,""Exports, EUR"",LOW,EUR"
-fc8480ec-6b9c-45f7-a132-b8b0bc1f9792,11/06/2020 07:45:00,Current Account,LOW,EUR
-6917d81e-d699-4de4-9422-6dc797c5081c,11/06/2020 07:45:00,Nonfarm Payrolls (QoQ),LOW,EUR
-120b49be-a132-4692-a4b4-991b0affcd29,11/06/2020 07:45:00,Trade Balance EUR,LOW,EUR
-"1cc827bc-9ed7-4b2d-a89a-24b1b7db8b90,11/06/2020 07:45:00,""Imports, EUR"",LOW,EUR"
-1e017459-e7ee-4948-8bb7-fc4248d9a52c,11/06/2020 08:00:00,Industrial Output Cal Adjusted (YoY),LOW,EUR
-08472f7d-2f40-4369-8e84-3c4835256e2d,11/06/2020 08:00:00,Foreign Currency Reserves,LOW,CHF
 1e4a1bbb-bf2b-48bc-9fbb-9d2a9a17c806,11/06/2020 08:30:00,Halifax House Prices (YoY/3m),LOW,GBP
 c87fb783-1166-4e07-9ae8-096d8323df15,11/06/2020 08:30:00,Halifax House Prices (MoM),LOW,GBP
 56ec732c-4233-4a68-b1f2-95b341cc92f3,11/06/2020 09:00:00,Retail Sales s.a. (MoM),LOW,EUR
 f34f476d-59dc-4fac-8cbe-c3d96d81a8f3,11/06/2020 09:00:00,Retail Sales n.s.a (YoY),LOW,EUR
-2dadf485-497a-4df2-8383-558fb25fc774,11/06/2020 13:30:00,Nonfarm Payrolls,HIGH,USD
+2dadf485-497a-4df2-8383-558fb25fc774,11/06/2020 11:30:00,Nonfarm Payrolls,HIGH,USD
 86056a63-1b65-4fa8-b668-48f4ce9bb790,11/06/2020 13:30:00,Average Hourly Earnings (YoY),MEDIUM,USD
 e9f832e4-c9a2-4556-bb1a-b642a6ef4b0c,11/06/2020 13:30:00,Average Weekly Hours,LOW,USD
 b9db8401-8295-40e3-a8ac-5faef981a3cf,11/06/2020 13:30:00,Labor Force Participation Rate,MEDIUM,USD
@@ -64,3 +35,44 @@ d3f6fc8c-8a92-4c59-b811-2bfef3b32a48,11/07/2020 02:00:00,Exports (YoY),MEDIUM,CN
 3e1a8a91-9f8a-4815-b2ac-78fa43f6ed7e,11/07/2020 02:00:00,Imports (YoY),MEDIUM,CNY
 ff05e034-3821-4d58-829c-d8e93258fda4,11/07/2020 02:00:00,Trade Balance CNY,LOW,CNY
 fe58c2bd-8439-489e-a384-00fea2d5712b,11/07/2020 08:00:00,Foreign Exchange Reserves (MoM),LOW,CNY
+61a29c9b-7e42-4060-95be-024616b4cb43,11/08/2020 23:50:00,JP Foreign Reserves,LOW,JPY
+261618e6-2a46-41e0-83a1-369f8236114a,11/08/2020 23:50:00,BoJ Summary of Opinions,LOW,JPY
+9efb2bfe-fc4c-4fc2-98de-ad34681eb0d9,11/09/2020 05:00:00,Coincident Index,LOW,JPY
+5402f301-32ef-443b-aa27-c6e3aa5fffa0,11/09/2020 05:00:00,Leading Economic Index,MEDIUM,JPY
+fe9feb02-7907-469e-b466-88cb75ee9307,11/09/2020 06:45:00,Unemployment Rate s.a (MoM),MEDIUM,CHF
+e52f55af-610f-4914-890a-4e2feb0aa55d,11/09/2020 07:00:00,Exports (MoM),LOW,EUR
+96665ed9-34ef-4c00-a2b2-94d6f354f085,11/09/2020 07:00:00,Trade Balance s.a.,MEDIUM,EUR
+a41a39e0-e4a2-45a4-bd10-2003a3c3d727,11/09/2020 07:00:00,Current Account n.s.a.,LOW,EUR
+78979bef-c6a9-4237-ab49-24a4eefc1069,11/09/2020 07:00:00,Imports (MoM),LOW,EUR
+883a9748-aceb-4a6e-9aff-202d871f44e7,11/09/2020 09:30:00,Sentix Investor Confidence,LOW,EUR
+5200af32-108a-44c7-b27b-868f398c2a6d,11/09/2020 10:35:00,BoE's Governor Bailey speech,HIGH,GBP
+eebeb07b-9b57-4a0e-ae75-4b3b6bea3d3b,11/09/2020 14:00:00,BoE's Haldane speech,MEDIUM,GBP
+71f87854-29f7-42d1-be09-ce4ada769964,11/09/2020 21:45:00,Electronic Card Retail Sales  (MoM),LOW,NZD
+e4373ccd-ede1-47f8-b029-8f8ee8e887ac,11/09/2020 21:45:00,Electronic Card Retail Sales (YoY),LOW,NZD
+631ada04-3954-408f-b5de-ab2fdc244ac6,11/09/2020 23:50:00,Current Account n.s.a.,MEDIUM,JPY
+e04fe4fb-debf-4fab-aff0-a5b104e01892,11/09/2020 23:50:00,Bank Lending (YoY),LOW,JPY
+f83ff99c-2b58-4ff4-8674-876d803cadb1,11/09/2020 23:50:00,Trade Balance - BOP Basis,LOW,JPY
+b4290c6e-9673-4ff3-a257-8aa021df6a7a,11/10/2020 00:01:00,BRC Like-For-Like Retail Sales (YoY),MEDIUM,GBP
+d4583c54-7a25-4cd1-9ed6-82d156a28d48,11/10/2020 00:30:00,National Australia Bank's Business Confidence,LOW,AUD
+61366772-c9ec-4fb7-bb2a-2cf1139858e2,11/10/2020 00:30:00,National Australia Bank's Business Conditions,LOW,AUD
+0c628335-a085-47d9-8878-8ef899ac1f70,11/10/2020 01:30:00,Consumer Price Index (MoM),MEDIUM,CNY
+cb3cfbe2-acd3-4623-b770-56a4f1990e52,11/10/2020 01:30:00,Producer Price Index (YoY),MEDIUM,CNY
+5de0516c-0c63-40b3-af97-4e683135f911,11/10/2020 01:30:00,Consumer Price Index (YoY),HIGH,CNY
+bfb6a09b-4dd7-44b7-a439-ab19116fd784,11/10/2020 05:00:00,Eco Watchers Survey: Outlook,LOW,JPY
+413d234f-edf0-431e-98a8-cda37dfe4b6c,11/10/2020 05:00:00,Eco Watchers Survey: Current,LOW,JPY
+a0785e72-919f-436b-8223-52bb20a4da7e,11/10/2020 06:30:00,ILO Unemployment,LOW,EUR
+9dd71d92-b1c5-49ba-945c-4aac12052f47,11/10/2020 07:00:00,Claimant Count Rate,MEDIUM,GBP
+c64d43ed-cca2-4ac7-861f-1fd814779a48,11/10/2020 07:00:00,Claimant Count Change,HIGH,GBP
+abb76aec-4792-4535-8aeb-e03d080196e5,11/10/2020 07:00:00,ILO Unemployment Rate (3M),HIGH,GBP
+6eb1103e-1cc9-4b17-ab8d-5566e2384ca6,11/10/2020 07:00:00,Average Earnings Including Bonus (3Mo/Yr),MEDIUM,GBP
+5519bfd1-6563-43d3-9ef0-a8947c8cc4de,11/10/2020 07:00:00,Average Earnings Excluding Bonus (3Mo/Yr),MEDIUM,GBP
+8bc84662-5708-489e-a90d-1c6cf2899279,11/10/2020 07:00:00,New Loans,LOW,CNY
+1b7fbe2c-7ab3-4235-8361-875030a56566,11/10/2020 07:00:00,M2 Money Supply (YoY),LOW,CNY
+7d75115d-5133-4734-b976-fc8ede0fd7d9,11/10/2020 07:45:00,Industrial Output (MoM),LOW,EUR
+8da9fec2-9d4f-4ca1-a35c-38c518bfc43a,11/10/2020 09:00:00,Industrial Output s.a. (MoM),LOW,EUR
+cdbe2e82-8d28-42ce-b8dd-902c3112fbef,11/10/2020 09:00:00,Industrial Output w.d.a (YoY),LOW,EUR
+baa51d1e-fd34-4fb0-89df-1fe70249dafa,11/10/2020 09:40:00,12-Month Letras Auction,LOW,EUR
+e7bd2669-c0eb-4c17-90d1-a16e44794ed1,11/10/2020 09:40:00,6-Month Letras Auction,LOW,EUR
+6b294c98-7c68-4d68-97fa-00de8c9f4b26,11/10/2020 10:00:00,ZEW Survey – Economic Sentiment,MEDIUM,EUR
+7532dbc6-9c72-4ffe-8286-2483bb41a24b,11/10/2020 10:00:00,ZEW Survey – Current Situation,MEDIUM,EUR
+84934b8a-8b66-4a7d-b951-4779ad5732d3,11/10/2020 10:00:00,ZEW Survey – Economic Sentiment,MEDIUM,EUR
