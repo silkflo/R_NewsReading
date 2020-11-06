@@ -55,7 +55,7 @@ for(i in 1:nrow(DFT2MN)){
 DFT2MN$Flag = flag
  
 # filter the table with magic number not allow to trade only
-DFT2MN <-as.data.frame(DFT2MN) %>% filter(DFT2MN$Flag == 1)
+#DFT2MN <-as.data.frame(DFT2MN) %>% filter(DFT2MN$Flag == 1)
 
 
 #----------SEND SIGNAL IN A CSV FILE-------------#

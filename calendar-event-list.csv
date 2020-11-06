@@ -3,7 +3,7 @@ Id,Start,Name,Impact,Currency
 c87fb783-1166-4e07-9ae8-096d8323df15,11/06/2020 08:30:00,Halifax House Prices (MoM),LOW,GBP
 56ec732c-4233-4a68-b1f2-95b341cc92f3,11/06/2020 09:00:00,Retail Sales s.a. (MoM),LOW,EUR
 f34f476d-59dc-4fac-8cbe-c3d96d81a8f3,11/06/2020 09:00:00,Retail Sales n.s.a (YoY),LOW,EUR
-2dadf485-497a-4df2-8383-558fb25fc774,11/06/2020 11:30:00,Nonfarm Payrolls,HIGH,USD
+2dadf485-497a-4df2-8383-558fb25fc774,11/06/2020 15:30:00,Nonfarm Payrolls,HIGH,USD
 86056a63-1b65-4fa8-b668-48f4ce9bb790,11/06/2020 13:30:00,Average Hourly Earnings (YoY),MEDIUM,USD
 e9f832e4-c9a2-4556-bb1a-b642a6ef4b0c,11/06/2020 13:30:00,Average Weekly Hours,LOW,USD
 b9db8401-8295-40e3-a8ac-5faef981a3cf,11/06/2020 13:30:00,Labor Force Participation Rate,MEDIUM,USD
