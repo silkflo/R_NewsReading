@@ -8,6 +8,8 @@
 # libraries
 library(rvest)
 library(qdap)
+library(openssl)
+library(magrittr)
 # you should also: install.packages("openssl")
 
 # url of websites (choose your own) and variables
@@ -22,9 +24,9 @@ heads_CA <- urlCA %>% read_html() %>% html_nodes("h3") %>% html_text()
 heads_UK <- urlGB %>% read_html() %>% html_nodes("h3") %>% html_text()
 
 # get the polarity scores
-pol_US <- heads_US %>% polarity() #plot(pol_US)
-pol_CA <- heads_CA %>% polarity() #plot(pol_CA)
-pol_UK <- heads_UK %>% polarity() #plot(pol_UK)
+pol_US <- heads_US[1] %>% qdap::polarity() #plot(pol_US)
+pol_CA <- heads_CA[2] %>% qdap::polarity() #plot(pol_CA)
+pol_UK <- heads_UK[1] %>% qdap::polarity() #plot(pol_UK)
 
 # extract average values
 ave_US <- pol_US$group$ave.polarity
@@ -41,7 +43,7 @@ id_hash <- Sys.time() %>% as.character.POSIXt() %>% openssl::sha1() %>% substr(1
 
 # write the log
 write.csv(summmary_df,
-          paste0("C:/Users/fxtrams/Documents/000_TradingRepo/R_NewsReading/log/s_log-",
+          paste0("E:/trading/Git/R_NewsReading/log/s_log-",
                  Sys.Date(), "-", id_hash, ".csv"),
           row.names = F)
 
@@ -71,7 +73,7 @@ write_news_sentiment_decision <- function(pair_string,
 # write_news_sentiment_decision("GBPCAD", ave_UK, ave_CA, 0.02, getwd()) 
 
 # decision to write in the sandbox of Terminal 2
-path_T2 <- "C:/Program Files (x86)/FxPro - Terminal2/MQL4/Files"
+path_T2 <- "C:/Program Files (x86)/AM MT4 - Terminal 2/MQL4/Files"
 
 # decisions writing to the sandbox
 write_news_sentiment_decision("GBPUSD", ave_UK, ave_US, 0.1, path_T2)

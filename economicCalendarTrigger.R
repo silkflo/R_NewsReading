@@ -61,14 +61,18 @@ DFT2MN$Flag = flag
 #----------SEND SIGNAL IN A CSV FILE-------------#
 
 # write flag obtained to all terminals!
-#Terminal 1
-write.csv(DFT2MN, "C:/Program Files (x86)/AM MT4 - Terminal 1/MQL4/Files/01_MacroeconomicEvent.csv", row.names = F)
+
 #Terminal 2
 write.csv(DFT2MN, "C:/Program Files (x86)/AM MT4 - Terminal 2/MQL4/Files/01_MacroeconomicEvent.csv", row.names = F)
+#Terminal 1
+DFT1MN <- data.frame(DFT2MN$MagicNumber - 100, DFT2MN$Symbol,DFT2MN$Flag )
+write.csv(DFT1MN, "C:/Program Files (x86)/AM MT4 - Terminal 1/MQL4/Files/01_MacroeconomicEvent.csv", row.names = F)
 #Terminal 3
-write.csv(DFT2MN, "C:/Program Files (x86)/AM MT4 - Terminal 3/MQL4/Files/01_MacroeconomicEvent.csv", row.names = F)
+DFT3MN <- data.frame(DFT2MN$MagicNumber + 100, DFT2MN$Symbol,DFT2MN$Flag )
+write.csv(DFT3MN, "C:/Program Files (x86)/AM MT4 - Terminal 3/MQL4/Files/01_MacroeconomicEvent.csv", row.names = F)
 #Terminal 4
-write.csv(DFT2MN, "C:/Program Files (x86)/AM MT4 - Terminal 4/MQL4/Files/01_MacroeconomicEvent.csv", row.names = F)
+DFT4MN <- data.frame(DFT2MN$MagicNumber + 200, DFT2MN$Symbol,DFT2MN$Flag )
+write.csv(DFT4MN, "C:/Program Files (x86)/AM MT4 - Terminal 4/MQL4/Files/01_MacroeconomicEvent.csv", row.names = F)
 
 
 
