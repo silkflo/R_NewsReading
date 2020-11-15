@@ -24,7 +24,9 @@ heads_CA <- urlCA %>% read_html() %>% html_nodes("h3") %>% html_text()
 heads_UK <- urlGB %>% read_html() %>% html_nodes("h3") %>% html_text()
 
 # get the polarity scores
-pol_US <- heads_US[1] %>% qdap::polarity() #plot(pol_US)
+
+`[[.qdap_hash` <- `[[.data.frame`
+pol_US <- qdap::polarity(heads_US, grouping.var = NULL,polarity.frame = heads_US) #plot(pol_US)
 pol_CA <- heads_CA[2] %>% qdap::polarity() #plot(pol_CA)
 pol_UK <- heads_UK[1] %>% qdap::polarity() #plot(pol_UK)
 

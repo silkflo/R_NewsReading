@@ -12,7 +12,7 @@
 # encrypt your keys using script 'encrypt_api_key.R'
 
 ## define path of the repository
-path_repository <- "C:/Users/fxtrams/Documents/000_TradingRepo/R_NewsReading/TWITTER_FINSEN"
+path_repository <- "E:/trading/Git/R_NewsReading/TWITTER_FINSEN"
 
 # or use repository path if just using sample data
 #path_repository <- "TWITTER_FINSEN"
@@ -29,7 +29,7 @@ library(reshape2)
 
 # establish twitter connection: function will insure the connection
 establish_twitter_connection(path_encrypted_keys = file.path(path_repository, "Keys"),
-                             path_private_key = file.path("C:/Users/fxtrams/.ssh", "id_api"))
+                             path_private_key = file.path("C:/Users/Flori/.ssh", "id_api"))
 
 
 ## =================================================================
@@ -69,10 +69,10 @@ if(!file.exists(file.path(path_repository, "Logs/Sent.rds"))){
 sentiment_logs <- read_rds(file.path(path_repository, "Logs/Sent.rds"))
 
 ## Price data of the asset
-path_price <- "C:/Program Files (x86)/FxPro - Terminal2/MQL4/Files/AI_CP60-333.csv"
+path_price <- "C:/Program Files (x86)/AM MT4 - Terminal 2/MQL4/Files/AI_OP1-14200.csv"
 topic_price <- read_csv(path_price,col_names = F)
 # convert to time format 
-topic_price$X1 <- ymd_hms(topic_price$X1)
+topic_price$X1 <- ymd_hms(topic_price$X1) + 3600 * 5
 # same for sentiment data
 sentiment_logs$DateTime <- ymd_hms(sentiment_logs$DateTime)
 
@@ -88,6 +88,7 @@ sent_price_joined <- s_round %>% inner_join(topic_price, by = c("DateTimeR" = "X
 ## ====================================================================
 # write obtained dataset to the Logs folder
 write_rds(sent_price_joined, file.path(path_repository, "Logs/Sent_price.rds"))
+#Sent_price <- read_rds(file.path(path_repository, "Logs/Sent_price.rds"))
 
 # Shift data -> train regression model -> etc see script sent_learn_ai_R.R
 

@@ -12,8 +12,8 @@ library(openssl)
 library(tidyverse)
 
 # private and public key path (adapt path for your computer)
-path_private_key <- file.path("C:/Users/fxtrams/.ssh", "id_api")
-path_public_key <- file.path("C:/Users/fxtrams/.ssh", "id_api.pub")
+path_private_key <- file.path("C:/Users/Flori/.ssh", "id_api")
+path_public_key <- file.path("C:/Users/Flori/.ssh", "id_api.pub")
 
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

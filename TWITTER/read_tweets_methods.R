@@ -13,12 +13,12 @@ establish_twitter_connection()
 # read tweets by searching hashtags (examples)
 search_hash <- "#tesla"
 search_hash <- "#Facebook+FB"
-search_hash <- "Coca Cola"
-search_hash <- "Pepsi"
+search_hash <- "Silkroad"
+search_hash <- "sro"
 search_hash <- "Alibaba"
 search_hash <- "Amazon"
-search_hash <- "Nasdaq"
-search_hash <- "Greece"
+search_hash <- "electus"
+search_hash <- "ultimus"
 search_hash <- "Swiss"
 search_hash <- "Crypto"
 # more terms
@@ -37,20 +37,20 @@ tweets_df <- searchTwitter(searchString = search_hash,
 #tweets_df_noretweet <- tweets_df %>% filter()
 
 # --------- get a list of tweets with searched term and specific date
-tweets_df <- searchTwitter(searchString = "#tesla+$TSLA",
+tweets_df <- searchTwitter(searchString = "#silkroad",
                            n = 5000,
                            lang = 'en',
                            since='2018-11-25', 
-                           until='2018-12-11') %>%
+                           until='2020-12-11') %>%
   twListToDF()
 
 # searching in the past [requires premium subscription]. 
 # Standard subscription is 7 days only see: https://developer.twitter.com/en/pricing
-tweets_df <- searchTwitter(searchString = "#tesla",
+tweets_df <- searchTwitter(searchString = "silkroad",
                            n = 5000,
                            lang = 'en',
                            since='2017-05-25', 
-                           until='2017-11-25') %>%
+                           until='2020-11-25') %>%
   twListToDF()
 
 
@@ -61,8 +61,8 @@ tweets_df <- searchTwitter(searchString = 'wef',
   twListToDF()
 
 # --------- get a list of tweets with searched terrm and geocode
-tweets_df <- searchTwitter(searchString = 'tesla',
-                           geocode='35.6895,139.6917,10mi',
+tweets_df <- searchTwitter(searchString = 'macron',
+                           geocode='48.85756,2.34280,10mi',
                            n = 100) %>%
   twListToDF() #%>% write_csv("TWITTER/TeslaTokyo.csv")
 

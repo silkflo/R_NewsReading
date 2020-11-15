@@ -8,7 +8,7 @@ establish_twitter_connection <- function(){
   source("TWITTER/decrypt_mykeys.R")
   
   # private and public key path - replace paths with those of your computer
-  path_private_key <- file.path("C:/Users/fxtrams/.ssh", "id_api")
+  path_private_key <- file.path("C:/Users/Flori/.ssh", "id_api")
   
   # Consumer API keys
   ConsumerAPIkeys <- decrypt_mykeys(path_encrypted_content = "TWITTER/Keys/ConsumerAPIkeys.enc.rds",

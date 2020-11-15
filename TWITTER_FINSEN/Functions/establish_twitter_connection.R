@@ -8,7 +8,7 @@
 #'
 #' @examples
 establish_twitter_connection <- function(path_encrypted_keys, path_private_key){
-  source("C:/Users/fxtrams/Documents/000_TradingRepo/R_NewsReading/TWITTER_FINSEN/Functions/decrypt_mykeys.R")
+  source("E:/trading/Git/R_NewsReading/TWITTER_FINSEN/Functions/decrypt_mykeys.R")
   # path to encrypted keys - replace with those of your computer
   # path_encrypted_keys <- "C:/Users/fxtrams/Documents/003_Udemy/good_news/Keys"
   
